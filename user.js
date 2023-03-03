@@ -20,7 +20,10 @@ const saveEmail = () => {
     console.log(PasswordUser);
     clear();
     alert('Your account has been created successfully \n User name and Password has been saved in your local storage ')
-};
+    window.location.href = "home.html";
+  };
+
+
 
 const clear = () => {
   document.getElementById('email').value = '';

@@ -36,3 +36,7 @@ const clear=()=>{
     document.getElementById('password').value = '';
 };
 
+const signout = () => {
+    alert('You have been logged out. \n Please re-login to continue.');
+    window.location.href = "home.html";
+};
