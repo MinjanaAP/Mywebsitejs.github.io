@@ -1,6 +1,7 @@
 const emailInputUser = document.querySelector('.emailuser');
 const passwordInputUser = document.querySelector('#passworduser');
-
+const email = document.getElementById('email').value;
+const password = document.getElementById('passworduser').value;
 var EmailUser;// !set email 
 var PasswordUser;// !set password
 
@@ -12,15 +13,20 @@ passwordInputUser.addEventListener('input', (event) => {
     PasswordUser = event.target.value;
 });
 
+
 const saveEmail = () => {
-   
-   localStorage.setItem('email', EmailUser);
-   localStorage.setItem('password', PasswordUser);
-    console.log(EmailUser);
-    console.log(PasswordUser);
-    clear();
-    alert('Your account has been created successfully \n User name and Password has been saved in your local storage ')
-    window.location.href = "home.html";
+  if(email == "" || password == ""){
+    alert('Please enter your email and password');
+}else{
+  localStorage.setItem('email', EmailUser);
+  localStorage.setItem('password', PasswordUser);
+   console.log(EmailUser);
+   console.log(PasswordUser);
+   clear();
+   alert('Your account has been created successfully \n User name and Password has been saved in your local storage ')
+   window.location.href = "home.html";
+}
+ 
   };
 
 
