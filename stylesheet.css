@@ -122,11 +122,13 @@ body{
 
 .textFeild{
     width: 100%;
-    padding: 0 25%;
+    padding: 0  25%;
+    margin: 0 ;
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 #checkText{

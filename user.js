@@ -18,5 +18,13 @@ const saveEmail = () => {
    localStorage.setItem('password', PasswordUser);
     console.log(EmailUser);
     console.log(PasswordUser);
+    clear();
+    alert('Your account has been created successfully \n User name and Password has been saved in your local storage ')
+};
+
+const clear = () => {
+  document.getElementById('email').value = '';
+  document.getElementById('passworduser').value = '';
+  document.getElementById('password2').value = '';
 };
 
