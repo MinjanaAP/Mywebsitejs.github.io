@@ -15,9 +15,11 @@ passwordInputUser.addEventListener('input', (event) => {
 
 
 const saveEmail = () => {
-  if(email == "" || password == ""){
-    alert('Please enter your email and password');
-}else{
+//   if(email == ""|| password == ""){
+//     alert('Please enter your email and password');
+//     clear();
+//     console.log(email);
+// }else{
   localStorage.setItem('email', EmailUser);
   localStorage.setItem('password', PasswordUser);
    console.log(EmailUser);
@@ -25,7 +27,7 @@ const saveEmail = () => {
    clear();
    alert('Your account has been created successfully \n User name and Password has been saved in your local storage ')
    window.location.href = "home.html";
-}
+// }
  
   };
 
